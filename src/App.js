@@ -22,7 +22,7 @@ const App = () => {
       setResponse((oldRes) => [...oldRes, { message, myMsg: true }]);
     }
     setMessage("");
-    await fetch("http://localhost:3001", {
+    await fetch("https://node-open-ai.onrender.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
